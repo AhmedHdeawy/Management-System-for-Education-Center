@@ -5,7 +5,8 @@ Sign in using these information to Enter as Admin
 #
 Username : Ahmed
 
-#Password: ahmed12
+#
+Password: ahmed12
 #
 After login as admin, you can
 # 
