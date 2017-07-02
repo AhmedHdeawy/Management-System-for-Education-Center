@@ -1,0 +1,47 @@
+// variabla
+
+// main style
+*{
+	padding: 0px;
+	border: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Lato', sans-serif;
+}
+a{
+	&:hover{
+	text-decoration: none;
+	}
+}
+
+
+// bootstrap re-design
+.btn-primary{
+	background-color: #a25f71;
+    border-color: #925566;
+	color: #ecf0f1;
+	&:hover, &:focus{
+		background-color: #ab6f7f;
+		border-color: #925566;
+	}
+}
+.navbar-default{
+	border: 0px;
+	border-radius: 0px;
+
+	.modal-header {
+		background-color: #a25f71;
+		color:#ecf0f1;
+	}
+
+	.modal-body{
+		.input-group{
+			p{
+				font-size: 17px;
+				margin: 10px 0px;
+				color: #2c3e50;
+			}
+		}
+	}
+}

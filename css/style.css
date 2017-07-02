@@ -1,0 +1,494 @@
+* {
+  padding: 0px;
+  border: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+    
+}
+
+.hidden{
+	visibility: hidden;
+}
+.visible{
+	visibility: visible;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #a25f71;
+  border-color: #925566;
+  color: #ecf0f1;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #ab6f7f;
+  border-color: #925566;
+}
+
+.navbar-default {
+  border: 0px;
+  border-radius: 0px;
+  margin-bottom: 0;
+}
+.navbar-default .modal-header {
+  background-color: #a25f71;
+  color: #ecf0f1;
+}
+.navbar-default .modal-body .input-group p {
+  font-size: 17px;
+  margin: 10px 0px;
+  color: #2c3e50;
+}
+
+.carousel-inner .mission{
+      font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+        color: brown;
+}
+
+.carousel-caption{
+    bottom: 20%;
+    left: 33%;
+    width: 30%;
+    border-radius: 8px;
+}
+
+/* Start Blog */
+
+/* Display Articles Page*/
+.dis_article{
+  background: url("../img/blog.jpg") no-repeat center center fixed;
+      background-size: cover;
+    min-height: 600px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dis_article .field{
+          background: rgba(9,9,9,0.72);
+          min-height: 600px;
+          padding-bottom: 50px;
+          padding-top: 50px;
+    }
+
+.dis_article .article {
+  background-color: transparent;
+  padding: 30px 20px;
+  border-radius: 8px;
+  color: #000;
+  width: 90%;
+}
+.dis_article .article p:nth-child(1){
+  float: right;
+  color:#0fc1f9;
+}
+.dis_article .article h2 {
+  font-weight: bold;
+  margin-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.dis_article .article img{
+  margin: 30px 0px;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+    padding: 10px;
+    border-radius: 50%;
+}
+.dis_article .article img:hover {
+  opacity: 0.7;
+}
+
+.dis_article .article p{
+  color: #fdfdfd;
+    font-size: 18px;
+    text-align: center;
+}
+
+.dis_article .article a{
+      width: 200px;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid yellow;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.dis_article .article a:hover{
+  background-color: brown;
+}
+/* Blog Page */
+
+.nav-cat{
+    margin-top: 5px
+}
+
+.bottom-nav{
+        background-color: #333333;
+    position: relative;
+    z-index: 999;
+    padding: 15px 0px;
+}
+.bottom-nav .navbar-collapse ul li{
+  margin: 0 15px;
+}
+.bottom-nav .navbar-collapse ul li a,
+.bottom-nav .navbar-collapse ul li a:focus{
+  font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 3px solid transparent;
+    padding: 10px 5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.bottom-nav .navbar-collapse ul li a:hover{
+  color: white;
+    border-bottom: 3px solid #fdc735;
+}
+section{
+	padding: 50px 0px;
+}
+.section-head{
+	padding: 50px 0px;
+}
+.section-head h1 {
+	font-family: 'Lato', sans-serif;
+	text-transform: capitalize;
+	font-size: 48px;
+	text-align: center;
+}
+
+.recent{float: right;}
+.blog .article, .recent {
+	background-color: #fff;
+	padding: 30px 20px;
+	border-radius: 8px;
+	color: #000;
+	box-shadow: 1px 1px 5px #6b6969;
+}
+
+.blog  .article h2 {
+	font-weight: bold;
+	margin-top: 30px;
+    text-align: center;
+    color: #000;
+}
+
+.blog .article img{
+	width: 100%;
+	margin: 30px 0px;
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+}
+.blog .article img:hover {
+	opacity: 0.7;
+}
+
+.blog .article p{
+	color: #030d58;
+    font-size: 16px;
+	padding: 0px 20px;
+	padding-right: 50px;
+    text-align: justify;
+}
+
+
+.recent h3 {
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.recent p{
+	font-size: 16px;
+}
+.recent p a {
+	color: #000;
+}
+.recent p a:hover, a:active {
+	color:#0fc1f9;
+}
+.recent p i {
+	margin: 0px 10px;
+}
+
+/*End Blog*/
+
+/* Start Cat*/
+
+.admin .container form{
+    margin-top: 15px;
+}
+.admin .container form input{
+    border-radius: 5px;
+    height: 40px;
+    width: 40%;
+}
+.admin .container form textarea{
+    border-radius: 5px;
+    height: 80px;
+    width: 40%;
+}
+.admin .container form select{
+      border-radius: 5px;
+    height: 40px;
+    width: 20%;
+}
+
+.admin .container form button {
+    width: 60px;
+    height: 30px;
+    border-radius: 7px;}
+/*    margin-left: 30px;}*/
+
+
+
+
+
+
+/* End category*/
+
+
+.admin{
+      width: 40%;
+      margin: 30px auto;
+}
+
+.Add, .Update, .Delete{
+    border: 3px solid #a25f71;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Add h3, .Update h3, .Delete h3{
+      text-align: center;
+    padding: 7px 0;
+    color: #2561cc;
+}
+
+/* Start Course */
+
+.course .container form{
+  
+}
+.course .container form h2{
+    text-align: center;
+}
+.course .container form input{
+    border-radius: 5px;
+    height: 40px;
+    width: 30%;
+}
+.course .container form textarea{
+    border-radius: 5px;
+    height: 80px;
+    width: 30%;
+}
+
+/* End Course */
+
+/* Start Contact Section */
+
+
+/* Contact Section */
+    #contact {
+          background: url("../img/contact.JPG") no-repeat center center fixed;
+          background-size: cover;
+          min-height: 600px;
+          padding-top: 0;
+          padding-bottom: 0;
+    }
+    #contact .field{
+          background: rgba(9,9,9,0.7);
+          min-height: 600px;
+          padding-bottom: 50px;
+          padding-top: 50px;
+    }
+
+    #contact-content{
+      width: 100%;
+      
+    }
+			#contact-content h1 
+      {
+				text-transform: capitalize;
+				font-size: 46px;
+				color:#ffffff;
+				margin-bottom: 20px;
+        text-align: center;
+			}
+
+			#contact-inf{
+				text-align: left;
+				color: #ffffff;
+				font-weight: lighter;
+				margin: 30px 0px;
+			}
+
+			#contact-form {
+				text-align: center;
+				padding: 0px 30px;
+			}
+      #contact-form h4{color: #fff;}
+			
+			#contact-form button:hover,
+			#contact-form button:active,
+			#contact-form button:focus{
+				color: #3c3c3c;
+				text-decoration: none;
+			}
+      #contact-form input[type="submit"]{
+            width: 20%;
+    font-size: 20px;
+    text-align: center;
+     margin-top: 10px
+      }
+
+/* End Contact Section */
+/* Course.php Page */
+
+.course_admin{
+    width: 50%;
+    margin: 10px auto;
+    color: blue;
+    border: 2px solid #736262;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.form{
+    
+        width: 70%;
+    margin: 10px auto;
+    border: 3px solid #380505;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.inside_form input,
+.inside_form textarea
+{
+    margin: 0 auto;
+        border: 2px solid #9e99e8;
+    
+}
+
+.inside_form select{
+        width: 30%;
+    margin: 0 auto;
+        border: 2px solid #9e99e8;
+}
+
+/* Register_course.php Page */
+
+.course{    margin: 20px auto;}
+.course_publish{
+        background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    color: #000;
+    box-shadow: 1px 1px 5px #6b6969;
+        margin-bottom: 20px;
+}
+
+.course_publish img{
+        height: 400px;
+    width: 100%;
+    margin: 30px 0px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    border: 2px solid #443838;
+    padding: 10px;
+}
+.course_publish img:hover{
+  opacity: 1.7;
+}
+
+.course_publish .course_desc{
+        font-size: 16px;
+    color: #1f0802;
+}
+hr{    border: 1px solid #aba1a1; }
+
+.color{    color: #0969d0;}
+.btn-course{    width: 100%;
+    font-size: 18px;}
+.enrool{
+      text-align: center;
+    color: #f90318;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.enrool .fa{margin-right: 10px}
+
+/* Edit Profile */
+
+.editprofile{
+  background: url("../img/edit_profile.jpg") no-repeat center center fixed;
+  background-size: cover;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 600px;
+}
+
+.editprofile .field{
+  background: rgba(9,9,9,0.7);
+    min-height: 600px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+}
+
+.form-editprofile{
+  width: 52%;
+    margin: 0 auto;
+}
+.form-editprofile label{
+  color: #fff;
+}
+
+.form-editprofile input{
+  margin: 10px 0;
+  font-size: 20px;
+  padding: 10px;
+  color: blue;
+}
+.form-editprofile input[type="submit"]{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    background-color: transparent;
+    border: 2px solid #ffee23;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.form-editprofile input[type="submit"]:hover{
+  width: 200px;
+    margin: 0 auto;
+    display: block;
+    color: #710707;
+    font-size: 20px;
+    background-color: #ccc8cb;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+
+  }

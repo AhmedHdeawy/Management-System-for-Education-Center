@@ -1,0 +1,213 @@
+* {
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+a {
+  transition: all 0.6s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+img:hover, img:focus {
+  opacity: 0.75;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+.section-header {
+  color: #333333;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-header h1 {
+  font-weight: bold;
+}
+
+.section-content {
+  text-align: center;
+}
+
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fdc735;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 0px;
+}
+.navbar-default #top-nav {
+  background-color: #333333;
+  padding: 0px;
+}
+.navbar-default #top-nav .collapse .navbar-nav li a {
+  font-size: 14px;
+  color: #a4a4a4;
+  padding: 10px;
+}
+.navbar-default #top-nav .collapse .navbar-nav li a:hover, .navbar-default #top-nav .collapse .navbar-nav li a:focus {
+  color: white;
+}
+.navbar-default #top-nav #sign-in .modal, .navbar-default #top-nav #sign-up .modal {
+  z-index: 99999;
+}
+.navbar-default #top-nav #sign-in .modal .modal-header, .navbar-default #top-nav #sign-up .modal .modal-header {
+  background-color: #fdc735;
+}
+.navbar-default #top-nav #sign-in .modal .modal-header .modal-title, .navbar-default #top-nav #sign-up .modal .modal-header .modal-title {
+  color: #333333;
+  font-size: 24px;
+}
+.navbar-default #top-nav #sign-in .modal .modal-body .btn-group .btn-primary, .navbar-default #top-nav #sign-up .modal .modal-body .btn-group .btn-primary {
+  border: 1px solid #4e4838;
+}
+.navbar-default #top-nav #sign-in .modal .modal-body .btn-group .btn-primary:hover, .navbar-default #top-nav #sign-in .modal .modal-body .btn-group .btn-primary:focus, .navbar-default #top-nav #sign-up .modal .modal-body .btn-group .btn-primary:hover, .navbar-default #top-nav #sign-up .modal .modal-body .btn-group .btn-primary:focus {
+  background-color: #fdd25d;
+}
+.navbar-default #top-nav #sign-in .modal .modal-body .input-group, .navbar-default #top-nav #sign-up .modal .modal-body .input-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.navbar-default #top-nav #sign-in .modal .modal-body .input-group p, .navbar-default #top-nav #sign-up .modal .modal-body .input-group p {
+  color: #333333;
+}
+.navbar-default #top-nav #sign-in .modal .modal-body .input-group p input, .navbar-default #top-nav #sign-up .modal .modal-body .input-group p input {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-default #top-nav #sign-in .modal .modal-footer .btn-primary, .navbar-default #top-nav #sign-up .modal .modal-footer .btn-primary {
+  border: 1px solid #e3b32f;
+  background-color: #fdc735;
+}
+.navbar-default #top-nav #sign-in .modal .modal-footer .btn-primary:hover, .navbar-default #top-nav #sign-in .modal .modal-footer .btn-primary:focus, .navbar-default #top-nav #sign-up .modal .modal-footer .btn-primary:hover, .navbar-default #top-nav #sign-up .modal .modal-footer .btn-primary:focus {
+  background-color: #fdd25d;
+}
+.navbar-default #top-nav #sign-up .modal-body .input-group:nth-child(7) p input {
+  border: 0px;
+}
+.navbar-default #bottom-nav {
+  background-color: #333333;
+  position: relative;
+  z-index: 999;
+  padding: 15px 0px;
+}
+.navbar-default #bottom-nav .container {
+  border-top: 1px solid #dddddd;
+}
+.navbar-default #bottom-nav .navbar-header {
+  padding-top: 15px;
+}
+.navbar-default #bottom-nav .navbar-header a {
+  font-size: 28px;
+  color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right {
+  padding-top: 15px;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right li {
+  margin: 0px 15px;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-bottom: 3px solid transparent;
+  padding: 10px 5px;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right li a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-right li a:focus {
+  border-bottom: 3px solid #fdc735;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right button {
+  margin-top: 4px;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right button i {
+  color: #fdc735;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right button:hover i {
+  color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu {
+  background-color: #333333;
+  color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a {
+  color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:active, .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:focus {
+  background-color: transparent;
+}
+

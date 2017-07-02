@@ -1,0 +1,420 @@
+* {
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+a {
+  transition: all 0.6s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+img:hover, img:focus {
+  opacity: 0.75;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+.section-header {
+  color: #333333;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-header h1 {
+  font-weight: bold;
+}
+
+.section-content {
+  text-align: center;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 3px solid #fdc735;
+  color: white;
+}
+
+.link-admin{
+  margin: 0 10px;
+}
+
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fdc735;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.navbar-default {
+  background-color: transparent;
+  border-radius: 0px;
+  border: 0px;
+}
+.navbar-default #top-nav {
+  background-color: #333333;
+  padding: 0px;
+}
+.navbar-default #top-nav .collapse .navbar-nav li a {
+  font-size: 14px;
+  color: #a4a4a4;
+  padding: 10px;
+}
+.navbar-default #top-nav .collapse .navbar-nav li a:hover, .navbar-default #top-nav .collapse .navbar-nav li a:focus {
+  color: white;
+}
+.navbar-default #top-nav #sign-in .modal, .navbar-default #top-nav #sign-up .modal {
+  z-index: 99999;
+}
+.navbar-default #top-nav #sign-in .modal .modal-header, .navbar-default #top-nav #sign-up .modal .modal-header {
+  background-color: #fdc735;
+}
+.navbar-default #top-nav #sign-in .modal .modal-header .modal-title, .navbar-default #top-nav #sign-up .modal .modal-header .modal-title {
+  color: #333333;
+  font-size: 24px;
+}
+.navbar-default #top-nav #sign-in .modal .modal-body .btn-group .btn-primary, .navbar-default #top-nav #sign-up .modal .modal-body .btn-group .btn-primary {
+  border: 1px solid #e3b32f;
+  background-color: #fdc735;
+}
+.navbar-default #top-nav #sign-in .modal .modal-body .btn-group .btn-primary:hover, .navbar-default #top-nav #sign-in .modal .modal-body .btn-group .btn-primary:focus, .navbar-default #top-nav #sign-up .modal .modal-body .btn-group .btn-primary:hover, .navbar-default #top-nav #sign-up .modal .modal-body .btn-group .btn-primary:focus {
+  background-color: #fdd25d;
+}
+.navbar-default #top-nav #sign-in .modal .modal-body .input-group, .navbar-default #top-nav #sign-up .modal .modal-body .input-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.navbar-default #top-nav #sign-in .modal .modal-body .input-group p, .navbar-default #top-nav #sign-up .modal .modal-body .input-group p {
+  color: #333333;
+}
+.navbar-default #top-nav #sign-in .modal .modal-body .input-group p input, .navbar-default #top-nav #sign-up .modal .modal-body .input-group p input {
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-default #top-nav #sign-in .modal .modal-footer .btn-primary, .navbar-default #top-nav #sign-up .modal .modal-footer .btn-primary {
+  border: 1px solid #e3b32f;
+  background-color: #fdc735;
+}
+.navbar-default #top-nav #sign-in .modal .modal-footer .btn-primary:hover, .navbar-default #top-nav #sign-in .modal .modal-footer .btn-primary:focus, .navbar-default #top-nav #sign-up .modal .modal-footer .btn-primary:hover, .navbar-default #top-nav #sign-up .modal .modal-footer .btn-primary:focus {
+  background-color: #fdd25d;
+}
+.navbar-default #top-nav #sign-up .modal-body .input-group:nth-child(7) p input {
+  border: 0px;
+}
+.navbar-default #bottom-nav {
+  background-color: #333333;
+  position: relative;
+  z-index: 999;
+  padding: 15px 0px;
+}
+.navbar-default #bottom-nav .container {
+  border-top: 1px solid #dddddd;
+}
+.navbar-default #bottom-nav .navbar-header {
+  padding-top: 15px;
+}
+.navbar-default #bottom-nav .navbar-header a {
+  font-size: 28px;
+  color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right {
+  padding-top: 15px;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right li {
+  margin: 0px 15px;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border-bottom: 3px solid transparent;
+  padding: 10px 5px;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right li a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-right li a:focus {
+  border-bottom: 3px solid #fdc735;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right button {
+  margin-top: 4px;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right button i {
+  color: #fdc735;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-right button:hover i {
+  color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu {
+  background-color: #333333;
+  color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a {
+  color: white;
+}
+.navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:hover, .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:active, .navbar-default #bottom-nav .navbar-collapse .navbar-nav li .dropdown-menu a:focus {
+  background-color: transparent;
+}
+
+#footer {
+  background-color: #333333;
+  border-bottom: 1px solid #dddddd;
+}
+#footer #top-footer {
+  padding: 50px 0px;
+}
+#footer #top-footer #about-us h4 {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+#footer #top-footer #about-us p {
+  color: #a4a4a4;
+  padding-right: 70px;
+}
+#footer #top-footer #about-us button {
+  margin-top: 20px;
+}
+#footer #top-footer #quick-links h4 {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+#footer #top-footer #quick-links p {
+  color: #fdc735;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+#footer #top-footer #quick-links p a {
+  color: #a4a4a4;
+}
+#footer #top-footer #quick-links p a:hover, #footer #top-footer #quick-links p a:focus {
+  color: #fdc735;
+}
+#footer #top-footer #contact-us h4 {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+#footer #top-footer #contact-us p {
+  padding: 10px 0px;
+  color: #a4a4a4;
+}
+#footer #top-footer #contact-us p i {
+  margin-right: 10px;
+}
+
+#user-profile-content .user-information, #user-profile-content .user-pannel {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 4px 4px 10px #dddddd;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+#user-profile-content .user-information {
+  float: left;
+  text-align: center;
+  margin: 0 auto;
+}
+#user-profile-content .user-information #user-face {
+  background-image: url(../img/user-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0px;
+}
+#user-profile-content .user-information #user-face img {
+  border-radius: 50%;
+  width:200px;
+}
+#user-profile-content .user-information #user-face h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fdc735;
+}
+#user-profile-content .user-information #user-info {
+  margin-top: 30px;
+}
+#user-profile-content .user-information #user-info div {
+  text-align: left;
+  margin: 5px 0px;
+  padding: 5px 0px 1px 10px;
+  background-color: white;
+  border-radius: 3px;
+}
+#user-profile-content .user-information #user-info div p {
+  font-size: 16px;
+}
+#user-profile-content .user-information #user-info div p b {
+  margin-right: 20px;
+}
+#user-profile-content .user-information #user-info .lable {
+  background-color: #dddddd;
+}
+
+.user-information .edit{
+      width: 200px;
+    margin: 0 auto;
+    display: block;
+    color: #4e0505;
+    font-size: 30px;
+    border: 2px solid #9fa7bd;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.user-information .edit:hover{
+      width: 200px;
+    margin: 0 auto;
+    display: block;
+    color: #4e0505;
+    font-size: 30px;
+    border: 2px solid #9fa7bd;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #dde4e2;
+}
+
+.admin-profile .edit{
+      color: #4e0505;
+    font-size: 20px;
+    border: 2px solid #9fa7bd;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+
+.admin-profile .edit:hover{
+      color: #4e0505;
+    font-size: 20px;
+    border: 2px solid #9fa7bd;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 10px;
+}
+#user-profile-content .user-pannel {
+  float: right;
+}
+#user-profile-content .user-pannel #edit-account {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 30px;
+}
+#user-profile-content .user-pannel #edit-account form h3 {
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#user-profile-content .user-pannel #edit-account form div {
+  color: #333333;
+}
+#user-profile-content .user-pannel #edit-account form div input {
+  border: 1px solid #dddddd;
+  padding: 10px 10px;
+  border-radius: 2px;
+  margin: 5px 0px;
+}
+#user-profile-content .user-pannel #edit-account form button {
+  color: #fdc735;
+  margin: 15px 0px;
+}
+#user-profile-content .user-pannel #edit-account form button:hover, #user-profile-content .user-pannel #edit-account form button:focus {
+  color: white;
+}
+#user-profile-content .user-pannel #edit-profile {
+  padding-bottom: 30px;
+}
+#user-profile-content .user-pannel #edit-profile form h3 {
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#user-profile-content .user-pannel #edit-profile form div {
+  color: #333333;
+}
+#user-profile-content .user-pannel #edit-profile form div input, #user-profile-content .user-pannel #edit-profile form div select, #user-profile-content .user-pannel #edit-profile form div textarea {
+  border: 1px solid #dddddd;
+  padding: 10px 10px;
+  border-radius: 2px;
+  margin: 5px 0px;
+}
+#user-profile-content .user-pannel #edit-profile form button {
+  color: #fdc735;
+  margin: 10px 15px 10px 10px;
+}
+#user-profile-content .user-pannel #edit-profile form button:hover, #user-profile-content .user-pannel #edit-profile form button:focus {
+  color: white;
+}
+

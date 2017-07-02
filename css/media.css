@@ -1,0 +1,43 @@
+
+/* Extra Small Screen - Smart Phones and Tablets */
+@media (max-width:767px) {
+
+	/* Enter your style for screens under 767px bellow this line  */
+
+
+
+
+}
+
+
+/* Small Screen */
+@media (min-width:768px) and (max-width: 991px) {
+
+	/* Enter your style for screens between 768px and 991px bellow this line  */
+
+
+
+
+}
+
+
+/* Medium Screen */
+@media (min-width:992px) and (max-width: 1199px) {
+
+	/* Enter your style for screens between 992px and 1199px bellow this line  */
+
+
+
+
+}
+
+
+/* Large Screen */
+@media (min-width:1200px) {
+
+	/* Enter your style for screens above 1200px bellow this line  */
+
+
+
+
+}
